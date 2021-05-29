@@ -1,0 +1,227 @@
+html,body {
+  height: 100%;
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+} 
+
+*{
+  box-sizing: border-box;
+}
+
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  flex: 65%;
+}
+svg {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  border: 4px solid #333;
+} 
+
+
+/* caja comandos y botones */
+
+#consola_comandos{
+  flex: 35%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+#caja_editor_codigo{
+  flex: 90%;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+}
+
+#caja_botones{
+  flex: 10%;
+  background-color: #20292e;
+  display: flex;
+  flex-direction: column;
+}
+
+#caja_botones > div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.338);
+  padding: 10px 0;
+}
+
+#caja_botones i{
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#caja_botones i:hover{
+  color: white;
+}
+
+
+/* editor de codigo */
+
+#codein{
+  height: 100%;
+  flex: 80%;
+}
+
+#consola{
+  flex: 20%;
+  background-color: #181a1d;
+  color: white;
+  padding: 5px;
+  border-top: 2px solid rgb(55, 64, 73);
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+
+.anima_consola_mostrar{
+  animation-name: animaconsola_mostrar;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animaconsola_mostrar{
+  from{
+    flex: 0;
+  }
+  to{
+    flex: 20%;
+  }
+}
+
+.anima_consola_esconser{
+  animation-name: animaconsola_esconder;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animaconsola_esconder{
+  from{
+    flex: 20%;;
+  }
+  to{
+    flex: 0;
+  }
+}
+
+
+
+.cm-s-dracula .CodeMirror-gutters, .cm-s-dracula.CodeMirror {
+  height: 100%;
+
+}
+
+
+/* reloj */
+
+section{
+  display: flex;
+  flex: 95%;
+}
+
+
+#header{
+  flex: 5%;
+}
+
+
+
+/* style.css | http://127.0.0.1:5500/style.css?_cacheOverride=1621739806163 */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  /* width: 100%; */
+  /* margin: auto; */
+  width: 90%;
+}
+
+
+
+
+
+/* header */
+
+#header{
+  background-color: #3B414C;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#texto_header{
+  font-size: 25px;
+  padding-left: 20px;
+  letter-spacing: 5px;
+}
+
+
+#reloj_dia{
+  font-size: 30px;
+  padding-right: 20px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+#icono_dia{
+  padding-right: 10px;
+}
+
+#temperatura{
+  padding-right: 20px;
+}
+
+#lumens{
+  padding-right: 20px;
+}
+
+
+#botones_hora i{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* popup */
+
+
+#popup{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: #3b414c99;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 9999999;
+  display: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
