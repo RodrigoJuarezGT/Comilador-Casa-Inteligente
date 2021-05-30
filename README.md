@@ -10,3 +10,6 @@ Proyecto final compiladores
 
 Ejecutar el proyecto
 https://rodrigojuarezgt.github.io/Comilador-Casa-Inteligente/index.html
+
+Link del video explicativo
+https://youtu.be/P3LGXdG-wlM
